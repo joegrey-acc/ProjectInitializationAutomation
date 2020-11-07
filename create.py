@@ -50,36 +50,22 @@ def createFolder():
         initFolder()
 
 def initFolder():
-    commands = [
-        'cd ' + str(path) + '\\' + str(sys.argv[1]),
-        'echo "# '+ str(sys.argv[1]) + '" >> README.md',
-        'touch .gitignore',
-        'git init',
-        'git remote add origin https://github.com/' + g.get_user().login + '/' + str(sys.argv[1]),
-        'git add *',
-        'git commit -m "Initial commit"',
-        'git push -u origin master'
-    ]
-
-    for c in commands:
-        os.system(c)
-
+    command_to_execute = 'cd ' + str(path) + '\\' + str(sys.argv[1]) + ' && echo # '+ str(sys.argv[1]) + ' >> README.md' + ' && git init && git remote add origin https://github.com/' + g.get_user().login + '/' + str(sys.argv[1]) + ' && git add * && git commit -m "Initial commit" && git push -u origin master'
+    os.system(command_to_execute)
     print(str(sys.argv[1]) + ' folder initialised')
-    for c in commands:
-        os.system('code ' + str(path) + '\\' + str(sys.argv[1]))
+    os.system('code ' + str(path) + '\\' + str(sys.argv[1]))
+
+def deletion():
+    try:
+        g.get_user().get_repo(str(sys.argv[1])).delete()
+    except Exception as e:
+        print("ERROR IN DELETING REPO: ")
+        print(e)
+    else:
+        print("REPO DELETED")    
 
 
 if __name__ == "__main__":
     canCreate()
+    #deletion()
 
-
-'''
-# DELETION OF REPO
-try:
-    g.get_user().get_repo("TEST_AUTO_REPO").delete()
-except Exception as e:
-    print("ERROR IN DELETING REPO: ")
-    print(e)
-else:
-    print("REPO DELETED")
-'''
