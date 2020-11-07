@@ -1,21 +1,6 @@
-### Install: 
-```bash
-git clone "https://github.com/KalleHallden/ProjectInitializationAutomation.git"
-cd ProjectInitializationAutomation
-pip install -r requirements.txt
-touch .env
-Then open the .env file and store your username, password, and desired file destination. Use the provided format at the bottom of this README.
-source ~/.my_commands.sh
-```
+# ProjectInitializationAutomation
 
-### Usage:
-```bash
-To run the script type in 'create <name of your folder>'
-```
-
-### Env File Format:
-```bash
-USERNAME="Username123"
-PASSWORD="Password123"
-FILEPATH="/path/to/your/project/"
-```
+1. Add .ev file to project folder
+2. Add FILEPATH = "< folder where you want to create new project >" 
+3. Add GITHUB_ACCESS_TOKEN = "< the access token that has all repo elements checked >""# test_folder" 
+"# test_folder" 
