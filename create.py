@@ -41,7 +41,7 @@ def createRepo():
 
 def createFolder():
     try:
-        os.makedirs(path + "\\"+str(sys.argv[1]))
+        os.makedirs(path + "\\"+str(sys.argv[1]), 0o777)
     except Exception as e:
         print("ERROR IN CREATING FOLDER")
         print(e)
@@ -67,4 +67,4 @@ def deletion():
 
 if __name__ == "__main__":
     canCreate()
-    #deletion()
+    deletion()
