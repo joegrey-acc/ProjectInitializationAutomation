@@ -3,7 +3,7 @@
 ## This will allow user to create a project in a specified folder and create a repo in GitHub and have it initialised with a ReadMe with the command :
 ### create <project_name>
 
-## Instrustions:
+## Instructions:
 1. CREATE .ev file to project folder
 2. Add FILEPATH = "< folder where you want to create new project >" to .ev
 3. Add GITHUB_ACCESS_TOKEN = "< the access token that has all repo elements checked >" to .ev

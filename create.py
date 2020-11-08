@@ -50,7 +50,7 @@ def createFolder():
         print("FOLDER CREATED")
         initFolder()
 
-# Initialises teh folder & pushes it up to GitHub
+# Initialises the folder & pushes it up to GitHub
 def initFolder():
     command_to_execute = 'cd ' + str(path) + '\\' + str(sys.argv[1]) + ' && echo # '+ str(sys.argv[1]) + ' >> README.md' + ' && git init && git remote add origin https://github.com/' + g.get_user().login + '/' + str(sys.argv[1]) + ' && git add * && git commit -m "Initial commit" && git push -u origin master'
     os.system(command_to_execute)
