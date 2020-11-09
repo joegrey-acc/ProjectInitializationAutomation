@@ -24,6 +24,7 @@
 
 #### BASH
 4. OPEN ~/.bashrc in an editor, e.g.:
+	(.bashrc folder should be located in C:\Users\<user>)
     ```
         code ~/.bashrc
     ```
