@@ -6,8 +6,8 @@
 ## Instructions:
 (ensure all folder path have forward slashes "/" - NOT back slashes "\")
 1. CREATE .env file to project folder
-2. Add FILEPATH = "< folder where you want to create new project >" to .ev
-3. Add GITHUB_ACCESS_TOKEN = "< the access token that has all repo elements checked >" to .ev
+2. Add FILEPATH = "< folder where you want to create new project >" to .env
+3. Add GITHUB_ACCESS_TOKEN = "< the access token that has all repo elements checked >" to .env
 
 ### Creating functions / commands in terminals
 #### WINDOWS
@@ -24,7 +24,7 @@
 
 #### BASH
 4. OPEN ~/.bashrc in an editor, e.g.:
-	(.bashrc folder should be located in C:\Users\<user>)
+    (.bashrc folder should be located in C:\Users\<user>)
     ```
         code ~/.bashrc
     ```
@@ -52,6 +52,7 @@
 
 #### Bash to Windows
 1. OPEN ~/.bashrc in an editor, e.g.:
+    (.bashrc folder should be located in C:\Users\<user>)
     ```
         code ~/.bashrc
     ```
