@@ -4,13 +4,14 @@
 ### create <project_name>
 
 ## Instructions:
+(ensure all folder path have forward slashes "/" - NOT back slashes "\")
 1. CREATE .ev file to project folder
 2. Add FILEPATH = "< folder where you want to create new project >" to .ev
 3. Add GITHUB_ACCESS_TOKEN = "< the access token that has all repo elements checked >" to .ev
 
 ### Creating functions / commands in terminals
 #### WINDOWS
-4. CREATE a .bat file
+4. CREATE a create.bat file
 5. ADD the following code to the bat file:
     ```
         start cmd /k "<folder where project is located>\create.py %1"
